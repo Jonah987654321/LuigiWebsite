@@ -1,0 +1,50 @@
+table {
+    width: 90%;
+}
+.pic {
+    width: 20%;
+    vertical-align: center;
+}
+.pic img {
+    width: 120px;
+    height: 120px;
+}
+.txt {
+    width: 70%;
+    text-align: center;
+    font-size: large;
+}
+.title {
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #066ed6;
+    margin: 0 auto 10px;
+    padding-bottom: 7px;
+    width: 90%;
+    max-width: 3000px;
+    text-transform: uppercase;
+}
+.space {
+    margin-top: 20px;
+}
+@media screen and (max-width:600px) {
+    .txt {
+        width: 65%;
+    }
+    .pic {
+        width: 35%;
+    }
+}
+
+.feature {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.txt p {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}

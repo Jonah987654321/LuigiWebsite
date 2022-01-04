@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Assets/css/collapsible.css">
+        <title>Commands | Luigi</title>
+        <link rel="icon" type="image/png" href="Assets/img/icon.png">
+    </head>
+    <body>
+        <style>
+            td, table {
+                text-align: center;
+                border-collapse: collapse;
+            }
+        </style>
+        <div class="menue">
+            <iframe src="menue.html" width="100%" height="60px"></iframe>
+        </div>
+        <div class="content">
+            <h2 style="text-decoration: underline;">Commands:</h2>
+            <p>This commands are slash commands. You can use slash commands by typing <code>/</code> in the message field</p>
+        </div>
+        <div class="c_content">
+                <button type="button" class="collapsible">General Commands</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>invite</td>
+                                <td class="inlf">invite</td>
+                                <td class="inlf">Get the <a href="invite.html" target="_blank">invite link</a> for the bot</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>server</td>
+                                <td class="inlf">server</td>
+                                <td class="inlf">Get the link for our <a href="https://discord.gg/f5EZpVHeYf", target="_blank">Support server</a></td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>contact</td>
+                                <td class="inlf">contact [type] [your message]</td>
+                                <td class="inlf">Contact the developer/owner anonymously</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>vote</td>
+                                <td class="inlf">vote</td>
+                                <td class="inlf">Support Luigi by voting for him</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>update</td>
+                                <td class="inlf">update</td>
+                                <td class="inlf">Get the latest news from our support server</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>botinfo</td>
+                                <td class="inlf">botinfo</td>
+                                <td class="inlf">See botstats and more</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>channelinfo</td>
+                                <td class="inlf">channelinfo #channel</td>
+                                <td class="inlf">Get infos about a channel</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>userinfo</td>
+                                <td class="inlf">userinfo @user</td>
+                                <td class="inlf">Get infos about an user</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>serverinfo</td>
+                                <td class="inlf">serverinfo</td>
+                                <td class="inlf">Get infos about a server</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>iban</td>
+                                <td class="inlf">iban [IBAN number]</td>
+                                <td class="inlf">Checks if the given IBAN is correct</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>poll</td>
+                                <td class="inlf">poll [your poll]</td>
+                                <td class="inlf">Creates a yes/no poll with analytics and a chart for you</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>bugreport</td>
+                                <td class="inlf">bugreport [your bug]</td>
+                                <td class="inlf">Reports a bug to the developer</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>suggest</td>
+                                <td class="inlf">suggest [your suggestion]</td>
+                                <td class="inlf">Suggest something for the bot</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="collapsible">Moderation commands</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>logchannel</td>
+                                <td class="inlf">logchannel [#channel]</td>
+                                <td class="inlf">Sets the log channel to send logs in. Use None as channel to disable logs</td>
+                                <td>Manage server</td>
+                            </tr>
+                            <tr>
+                                <td>purge</td>
+                                <td class="inlf">purge [limit] (@user)</td>
+                                <td class="inlf">Deletes the last [limit] messages (from a user)</td>
+                                <td>Manage messages</td>
+                            </tr>
+                            <tr>
+                                <td>kick</td>
+                                <td class="inlf">kick @user (optional Reason)</td>
+                                <td class="inlf">Kicks the user</td>
+                                <td>Kick members</td>
+                            </tr>
+                            <tr>
+                                <td>ban</td>
+                                <td class="inlf">ban @user (optional Reason)</td>
+                                <td class="inlf">Bans the user</td>
+                                <td>Ban users</td>
+                            </tr>
+                            <tr>
+                                <td>muterole</td>
+                                <td class="inlf">muterole [@role/role-id]</td>
+                                <td class="inlf">Sets the muterole for the server</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>mute</td>
+                                <td class="inlf">mute [@user/user-id]</td>
+                                <td class="inlf">Mutes the user</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>unmute</td>
+                                <td class="inlf">ummute [@user/user-id]</td>
+                                <td class="inlf">Unmutes the user</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>warn</td>
+                                <td class="inlf">warn [@user/user-id] [reason]</td>
+                                <td class="inlf">Warns the user</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>warnings</td>
+                                <td class="inlf">warnings[@user/user-id]</td>
+                                <td class="inlf">See all warnings the user recieved</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>removewarning</td>
+                                <td class="inlf">removewarning [warning-id]</td>
+                                <td class="inlf">Removes the warning</td>
+                                <td>Manage roles</td>
+                            </tr>
+                            <tr>
+                                <td>config</td>
+                                <td class="inlf">config</td>
+                                <td class="inlf">See the server settings</td>
+                                <td>Manage server</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="collapsible">Science commands</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>apod</td>
+                                <td class="inlf">apod</td>
+                                <td class="inlf">Show the <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">Astronomical Picture of the Day</a></td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>neo</td>
+                                <td class="inlf">neo</td>
+                                <td class="inlf">Shows <em>Near Earth Objects</em></td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>rover</td>
+                                <td class="inlf">rover</td>
+                                <td class="inlf">See a rover image from the mars</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>iss</td>
+                                <td class="inlf">iss</td>
+                                <td class="inlf">Sends the current position of the ISS</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>astros</td>
+                                <td class="inlf">astros</td>
+                                <td class="inlf">Shows all humans that are currently in space</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>element</td>
+                                <td class="inlf">element [element name]</td>
+                                <td class="inlf">Get infos about an element of the periodic table</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>symbol</td>
+                                <td class="inlf">symbol [element symbol]</td>
+                                <td class="inlf">Get infos about an element with the given symbol of the periodic table</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="collapsible">Economy commands</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>buy</td>
+                                <td class="inlf">buy [item] (quantity)</td>
+                                <td class="inlf">Buy an item</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>sell</td>
+                                <td class="inlf">sell [item] (quantity)</td>
+                                <td class="inlf">Sell an item</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>market</td>
+                                <td class="inlf">market</td>
+                                <td class="inlf">Shows all items you can buy</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>inventory</td>
+                                <td class="inlf">inventory</td>
+                                <td class="inlf">Shows all your items</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>catch</td>
+                                <td class="inlf">catch</td>
+                                <td class="inlf">Go fishing and find a treasure with a bit luck!</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>dig</td>
+                                <td class="inlf">dig</td>
+                                <td class="inlf">Go mining and maybe find diamonds</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>money</td>
+                                <td class="inlf">money (optional @user)</td>
+                                <td class="inlf">Shows the bank balance</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>work</td>
+                                <td class="inlf">work</td>
+                                <td class="inlf">Work every 24h to get money</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>transfer</td>
+                                <td class="inlf">transfer @user [transfer sum]</td>
+                                <td class="inlf">Give your friends some money</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>roll</td>
+                                <td class="inlf">roll [A/B] [Investment]</td>
+                                <td class="inlf">Casino Time! You can win or lose your Investment</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="collapsible">Minecraft commands</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>mcinfo</td>
+                                <td class="inlf">mcinfo [Minecraft username]</td>
+                                <td class="inlf">Get infos about a Minecraft account</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>hypixel</td>
+                                <td class="inlf">hypixel [Minecraft username]</td>
+                                <td class="inlf">Get hypixel stats like last recent game, first login and more</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>bedwars</td>
+                                <td class="inlf">bedwars [Minecraft username]</td>
+                                <td class="inlf">See hypixel bedwars stats like Games played, Wins, Kills and more</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="collapsible">User Voicechats</button>
+                <div class="col_content">
+                    <table width="100%" align="center">
+                        <thead class="cmd_table">
+                            <td>Name</td>
+                            <td class="inlf">Usage</td>
+                            <td class="inlf">Descritption</td>
+                            <td>Permissions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>create</td>
+                                <td class="inlf">create (optional userlimit)</td>
+                                <td class="inlf">Creates you a voicechannel, that is automatically deleted when it's empty</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>disconnect</td>
+                                <td class="inlf">disconnect @User</td>
+                                <td class="inlf">Disconnects an user from your voicechannel</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>set</td>
+                                <td class="inlf">set [Categorie Name]</td>
+                                <td class="inlf">Set the categorie, where the bot will create the user voicechannels</td>
+                                <td>Administrator</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+            </script>
+        </div><br>
+    </body>
+    <footer>
+        <table width="100%" class="footer_tbl">
+            <thead>
+                    <td class="undln">Contact us</td>
+                    <td class="undln">Vote for Luigi</td>
+                    <td class="undln">Other</td>
+            </thead>
+                <tbody>
+                    <tr class="blank_row">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://discord.gg/f5EZpVHeYf", target="_blank">Support server</a></td>
+                        <td><a href="https://top.gg/bot/705059255899914291/" target="_blank">Top.gg </a></td>
+                        <td><a href="ToS.html">Terms of Service</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:abc@example.com?subject=Luigi">E-Mail</a></td>
+                        <td><a href="https://voidbots.net/bot/705059255899914291/" target="_blank">VoidBots</a></td>
+                        <td><a href="partnership.html">Apply for partner</a></td>
+                    </tr>
+                    <tr class="blank_row">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>&copy;Jonah, 2021</td>
+                    </tr>
+                </tbody>
+            </tr>
+        </table>
+    </footer>
+</html>

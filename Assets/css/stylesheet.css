@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    /*padding: 0;*/
+}
+
+.content{
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+iframe {
+    border: none;
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+body {
+    /*background-color: #011627;*/
+    background-color: #070510;
+    color: white;
+}
+
+a {
+    color: #09AE95;
+    text-decoration: underline;
+}
+
+.menue {
+    /*background-color: #011627;*/
+    color: white;
+    margin-bottom: 0px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 150%;
+    border-left: 0.2em solid #02417A;
+}
+
+p.quote {
+    padding-left: 0.1em;
+}
+
+.cen_img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+  background-color: #0359AE;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+    text-decoration: underline;
+    background-color: #02417A;
+    border-radius: 6px;
+}
+
+.centered {
+    text-align: center;
+}
+
+footer {
+    background-color: #078487;
+    color: white;
+}
+
+.footer_tbl {
+    font-size: 16px;
+    text-align: center;
+    font: status-bar;
+}
+
+.footer_tbl a {
+    /*text-decoration: none;*/
+    color: white;
+}
+
+.footer_tbl a:hover {
+    color: #09AE95;
+    text-decoration: double underline
+}
+
+.undln {
+    text-decoration: rgb(150, 28, 150) underline;
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 0.3em;
+}
+
+.blank_row {
+    height: 10px;
+}
+
+.mid_center {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.wave_bg {
+    background-image: url("../img/Waves.png");
+    /* background-repeat: no-repeat; */
+    background-repeat: round;
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+}
+
+.floating {
+    border-radius: 50% !important;
+    animation: float 5s ease-in-out infinite;
+}
+  
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+  100% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+h1 {
+    text-decoration: underline #0359AE;
+    text-transform: uppercase;
+    font-size: 250%;
+}
+
+.desc {
+    font-size: x-large;
+}
